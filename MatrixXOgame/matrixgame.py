@@ -77,64 +77,67 @@ while(i<9):
         matrix()
         i+=1 
     elif(i%2!=0):
-        print("Player1",name2,"your mark(O): ")
+        print("Player2",name2,"your mark(O): ")
         c=int(input("Enter your move(1 to 9)"))
-        if(c==1):
-            if(b[0][0]!="X" and b[0][0]!="O"):
-                b[0][0]="O"
-            else:
-                print("Already entered in this place")
-                i-=1
-        elif(c==2):
-            if(b[0][1]!="X" and b[0][1]!="O"):
-                b[0][1]="O"
-            else:
-                print("Already entered in this place")
-                i-=1
-        elif(c==3):
-            if(b[0][2]!="X" and b[0][2]!="O"):
-                b[0][2]="O"   
-            else:
-                print("Already entered in this place")
-                i-=1
-        elif(c==4):
-            if(b[1][0]!="X" and b[1][0]!="O"):
-                b[1][0]="O"
-            else:
-                print("Already entered in this place")
-                i-=1
-        elif(c==5):
-            if(b[1][1]!="X" and b[1][1]!="O"):
-                b[1][1]="O"
-            else:
-                print("Already entered in this place")
-                i-=1
-        elif(c==6):
-            if(b[1][2]!="X" and b[1][2]!="O"):
-                b[1][2]="O"
-            else:
-                print("Already entered in this place")
-                i-=1
-        elif(c==7):
-            if(b[2][0]!="X" and b[2][0]!="O"):
-                b[2][0]="O"
-            else:
-                print("Already entered in this place")
-                i-=1
-        elif(c==8):
-            if(b[2][1]!="X" and b[2][1]!="O"):
-                b[2][1]="O"
-            else:
-                print("Already entered in this place")
-                i-=1
-        elif(c==9):
-            if(b[2][2]!="X" and b[2][2]!="O"):
-                b[2][2]="O"
-            else:
-                print("Already entered in this place")
-                i-=1
-        elif(c<0 and c>9):
-            print("enter numbers between 1 to 9 only")
+        if(c>=1 and c<=9):
+            if(c==1):
+                if(b[0][0]!="X" and b[0][0]!="O"):
+                    b[0][0]="O"
+                else:
+                    print("Already entered in this place")
+                    i-=1
+            elif(c==2):
+                if(b[0][1]!="X" and b[0][1]!="O"):
+                    b[0][1]="O"
+                else:
+                    print("Already entered in this place")
+                    i-=1
+            elif(c==3):
+                if(b[0][2]!="X" and b[0][2]!="O"):
+                    b[0][2]="O"   
+                else:
+                    print("Already entered in this place")
+                    i-=1
+            elif(c==4):
+                if(b[1][0]!="X" and b[1][0]!="O"):
+                    b[1][0]="O"
+                else:
+                    print("Already entered in this place")
+                    i-=1
+            elif(c==5):
+                if(b[1][1]!="X" and b[1][1]!="O"):
+                    b[1][1]="O"
+                else:
+                    print("Already entered in this place")
+                    i-=1
+            elif(c==6):
+                if(b[1][2]!="X" and b[1][2]!="O"):
+                    b[1][2]="O"
+                else:
+                    print("Already entered in this place")
+                    i-=1
+            elif(c==7):
+                if(b[2][0]!="X" and b[2][0]!="O"):
+                    b[2][0]="O"
+                else:
+                    print("Already entered in this place")
+                    i-=1
+            elif(c==8):
+                if(b[2][1]!="X" and b[2][1]!="O"):
+                    b[2][1]="O"
+                else:
+                    print("Already entered in this place")
+                    i-=1
+            elif(c==9):
+                if(b[2][2]!="X" and b[2][2]!="O"):
+                    b[2][2]="O"
+                else:
+                    print("Already entered in this place")
+                    i-=1
+            elif(c<0 and c>9):
+                print("enter numbers between 1 to 9 only")
+        else:
+            print("invalid input")
         matrix()
         i+=1
     if(b[0][0]=="X"and b[0][1]=="X"and b[0][2]=="X"):

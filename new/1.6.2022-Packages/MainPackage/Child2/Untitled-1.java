@@ -1,0 +1,12 @@
+<filter>  
+  <filter-name>f1</filter-name>  
+  <filter-class>MyFilter</filter-class>  
+  <init-param>  
+  <param-name>construction</param-name>  
+  <param-value>no</param-value>  
+  </init-param>  
+  </filter>  
+  <filter-mapping>  
+  <filter-name>f1</filter-name>  
+  <url-pattern>/servlet1</url-pattern>  
+  </filter-mapping>
